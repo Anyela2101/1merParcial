@@ -1,0 +1,45 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de Creditos</h2>
+            <form #formulario="ngForm">
+                <br>
+                                
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="text" placeholder="Digite la identificacion del cliente" name="Identificacion"  [(ngModel)]="cliente.Identificacion" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Nombres</label>
+                    <input type="text" placeholder="Digite los Nombres del cliente" name="Nombres"  [(ngModel)]="cliente.Nombres" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Digite Apellido del cliente"  name="Apellidos"  [(ngModel)]="cliente.Apellidos" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Capital Inicial</label>
+                    <input type="number" placeholder="Digite el Capital Inicial"  name="CapitalInicial"  [(ngModel)]="cliente.CapitalInicial" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Tiempo Credito</label>
+                    <input type="number" placeholder="Digite el tiempo del Credito"  name="Tiempocredito"  [(ngModel)]="cliente.Tiempocredito" class="form-control" />
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1"(click)="add(formulario)">Registrar Datos</button>
+                     <button class="btn btn-secondary mr-1" (click)="add(formulario)">Cancel</button>
+
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+
+    

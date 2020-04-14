@@ -1,0 +1,3 @@
+C:\Users\anyel\Documents\WEB\1merParcial\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+C:\Users\anyel\Documents\WEB\1merParcial\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+C:\Users\anyel\Documents\WEB\1merParcial\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs

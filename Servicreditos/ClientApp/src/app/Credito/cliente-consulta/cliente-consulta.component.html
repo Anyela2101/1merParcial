@@ -1,0 +1,35 @@
+<div class="row">
+        <div class="col-7">
+          <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Type to filter">
+        </div>
+      </div>
+      <hr>
+      
+      <table class="table table-striped" *ngIf='clientes && clientes.length'>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Identificación</th>
+            <th scope="col">Nombres </th>
+             <th scope="col">Apellidos </th>
+            <th scope="col">CapitalInicial</th>
+            <th scope="col">TasaInteres</th>
+            <th scope="col">TiempoCreadito</th>
+             <th scope="col">TotalPagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cliente of clientes; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ cliente.Identificacion }} </td>
+            <td>{{ cliente.Nombres }}</td>
+            <td>{{ cliente.Apellidos }}</td>
+            <td>{{ cliente.CapitalIncial }}</td>
+            <td>{{ cliente.TasaInteres }}</td>
+            <td>{{ cliente.Tiempocredito }}</td>
+            <td>{{ cliente.Totalpagar }}</td>
+          </tr>
+        </tbody>
+      </table>
+    
+
